@@ -1,1 +1,1 @@
-PyAutoGUI
+PyAutoGUI==0.9.53
